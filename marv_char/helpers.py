@@ -33,4 +33,4 @@ class JSONEncoder(json.JSONEncoder):
         if isinstance(obj, decimal.Decimal):
             # Convert the decimal value into a string
             return str(obj)
-        return super(JSONncoder, self).default(obj)
+        return super(JSONEncoder, self).default(obj)
